@@ -5,6 +5,7 @@
 ## 当前 skills
 
 - [`python-development`](skills/python-development/SKILL.md) —— 偏函数式、流水线式的 Python 写法偏好（`toolz.curried`、`T.pipe`），任何涉及编写 Python 代码的任务都会触发。
+- [`rust-development`](skills/rust-development/SKILL.md) —— 表达式优先、迭代器链驱动的 Rust 写法（nightly-first），附 no_std/FFI/嵌入式与对外库 crate 的叠加规范，任何涉及编写 Rust 代码的任务都会触发。
 
 ## 安装
 
@@ -14,7 +15,9 @@
 
 ```
 skills/
-└── python-development/
+├── python-development/
+│   └── SKILL.md
+└── rust-development/
     └── SKILL.md
 ```
 
