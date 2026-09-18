@@ -52,7 +52,7 @@ description: 按用户个人的 Rust 开发风格写作、修改、重构或审�
 ## 类型设计
 
 - 内部类型尽可能加全官方 derive，对外 API 按实际需要添加。
-- derive 顺序为 `Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash, Default`，第三方排最后；`thiserror` 的 `Error` 排最前；`repr(C)` 写在 `derive` 之前。
+- derive 顺序为 `Debug, Default, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash`，第三方排最后；`thiserror` 的 `Error` 排最前；`repr(C)` 写在 `derive` 之前。
 - 只在非泛型的 C FFI 边界成套出现：类型加 `repr(C)`，函数用 `extern "C"` 并加 `unsafe(no_mangle)`。
 - 函数优先写成 `const fn`。
 - 能用官方 trait 表达的行为，就直接 `impl` 而不另造同义方法。
