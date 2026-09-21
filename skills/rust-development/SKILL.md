@@ -17,7 +17,7 @@ description: 按用户个人的 Rust 开发风格写作、修改、重构或审�
 
 ## 工程基线
 
-- 积极采用 Rust 新特性。工具链用 nightly，edition 2024，用 `rust-toolchain.toml` 锁定版本。
+- 积极采用 Rust 新特性：工具链用 nightly，edition 2024，用 `rust-toolchain.toml` 锁定版本；优先以 `#![feature]` 启用能让写法更优雅的 unstable 特性。
 - 依赖选型：首选 `std`/`core`；优先使用能让代码更优雅的成熟库。
 - 外部库优先选生态内的事实标准，如 `thiserror`、`itertools`、`serde`、`bumpalo`、`num-traits` 等。
 - 项目扩展与成熟库里已有的，不重复实现。
